@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'todo',
     'crispy_forms',
+    "crispy_bootstrap3",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap3"
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -121,3 +125,5 @@ CRISPY_TEMPLATE_PACK='bootstrap3'
 
 
 STATIC_URL = '/static/'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
